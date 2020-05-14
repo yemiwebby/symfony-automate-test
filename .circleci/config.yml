@@ -30,8 +30,7 @@ jobs:
           paths:
             - ./vendor
 
-      # run tests with phpunit or codecept
-      #- run: ./vendor/bin/phpunit
+      # run tests with phpunit
       - run:
           name: "Run tests"
-          command: ./bin/phpunit
+          command: composer test
